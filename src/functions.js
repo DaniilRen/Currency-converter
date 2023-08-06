@@ -7,6 +7,7 @@ const getJson = async () => {
   const json = await response.json();
   output = json.rates[select_2_value]['rate_for_amount']
 
+  input_2.classList.add('in-use')
   input_2.value = output
 }
 
@@ -14,4 +15,9 @@ const getJson = async () => {
 function know_currency() {
 
   let data = getJson()
+}
+
+function input_ready() {
+  input_1.value = ''
+  input_1.classList.add('in-use')
 }

@@ -20,10 +20,13 @@
   justify-content: space-between;
   align-items: center;
   height: calc(var(--index) * 1.7);
+  padding: calc(var(--index) * 0.1);
+  font-size: calc(var(--index) * 0.75);
 }
 
 .Logo {
   margin-left: calc(var(--index) * 1.25);
+  font-size: calc(var(--index) * 1);
   font-weight: 900;
   background: var(--gradient-4);
   -webkit-background-clip: text;
@@ -39,6 +42,9 @@
 }
 
 .nav-item {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 475;
+  color: aliceblue;
   transition: scale .075s ease, font-weight .075s ease;
 }
 
@@ -46,6 +52,36 @@
   cursor: pointer;
   scale: 1.09;
   font-weight: bold;
+}
+
+.burger-menu {
+  position: absolute;
+  right: calc(var(--index) * 1);
+  top: calc(var(--index) * 1);
+	display: none;
+}
+
+#burger-menu-btn {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+
+.burger-slide {
+	position: relative;
+  text-align: left;
+	padding-top: 10px;
+}
+
+.block {
+	display: block;
+	padding-bottom: 6px;
+	font-size: calc(var(--index) * 2);
+}
+
+.hidden {
+	display: none;
 }
 
 .container {
@@ -70,7 +106,7 @@
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: rgba(41, 39, 39, 0.3);
-  color: aliceblue;
+  color: rgba(98 94 83 / 0.7);
   font-size: calc(var(--index) * 3);
   padding: calc(var(--index) * 2);
   width: calc(var(--index) * 25);
@@ -79,6 +115,12 @@
 }
 .input:hover {
   filter: brightness(150%);
+}
+
+.in-use {
+  color: aliceblue;
+  font-size: calc(var(--index) * 3);
+  padding: calc(var(--index) * 2);
 }
 
 #input-2 {
@@ -94,6 +136,7 @@
   padding: calc(var(--index) * 2) calc(var(--index) * 1);
   border:none;
   outline: none;
+  cursor: pointer;
   background-position: top 50%, 0 0;
 }
 .select:hover {
@@ -131,4 +174,35 @@
 }
 .know-currency:active {
   filter: brightness(125%);
+}
+
+@media(max-width: 800px) {
+  .header-line {
+		justify-content: space-between;
+	}
+
+  .menu {
+    background: rgba(0 0 0 / 0);
+    margin-top: calc(var(--index) * 1);
+  }
+
+  .Logo {
+    font-size: calc(var(--index) * 2);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .know-currency {
+    margin-top: calc(var(--index) * 2);
+  }
 }
