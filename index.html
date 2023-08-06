@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Currency_converter</title>
+</head>
+<body>
+
+  <div class="menu">
+    <p class="Logo">Verter</p>
+    <div class="nav">
+      <a class="nav-item">Home</a>
+      <a class="nav-item">About</a>
+      <a class="nav-item">Contacts</a>
+      <a class="nav-item">Products</a>
+    </div>
+  </div>
+  
+  <div class="container">
+
+    <div class="converter">
+      <div class="from">
+        <input class="input" id="input-1">
+        <select class="select" id="select-1">
+          <option value="RUB">RUB</option>
+          <option value="GBP">GBP</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+
+      <div class="to">
+        <input class="input" id="input-2">
+        <select class="select" id="select-2">
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="GBP">GBP</option>
+          <option value="RUB">RUB</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="know-currency"> Know your currency!</button>
+
+  </div>
+
+  <script src="functions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
