@@ -4,10 +4,19 @@
 }
 :root {
   --index: calc(1vh + 1vw);
-  --gradient-1: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(77,71,59,1) 52%, rgba(47,42,37,1) 100%);
-  --gradient-2: radial-gradient(circle, rgba(98,94,83,1) 0%, rgba(51,46,36,1) 74%);
+  --gradient-1: linear-gradient(90deg, rgb(29, 28, 28) 0%, rgba(77,71,59,1) 52%, rgba(47,42,37,1) 100%);
+  --gradient-2: radial-gradient(circle, rgb(80, 78, 72) 0%, rgba(51,46,36,1) 74%);
   --gradient-3: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   --gradient-4: linear-gradient(90deg, rgba(131,58,180,1) 10%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.main-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--gradient-1);
 }
 
 .menu {
@@ -91,7 +100,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(77,71,59,1) 52%, rgba(47,42,37,1) 100%);;
   display: flex;
 }
 
@@ -176,7 +184,23 @@
   filter: brightness(125%);
 }
 
+
+
 @media(max-width: 800px) {
+  .know-currency {
+    margin-left: calc(var(--index) * 1.25);
+  }
+
+  .converter {
+    margin-left: calc(var(--index) * 1);
+    margin-top: calc(var(--index) * 12);
+  }
+
+  .input {
+    width: calc(var(--index) * 20);
+    font-size: calc(var(--index) * 2.25);
+  }
+
   .header-line {
 		justify-content: space-between;
 	}

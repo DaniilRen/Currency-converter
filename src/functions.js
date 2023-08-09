@@ -13,11 +13,12 @@ const getJson = async () => {
 
 
 function know_currency() {
-
-  let data = getJson()
+  const data = getJson()
 }
 
 function input_ready() {
-  input_1.value = ''
-  input_1.classList.add('in-use')
+  if (input_1.value == 'enter amount') {
+    input_1.value = ''
+    input_1.classList.add('in-use')
+  }
 }
