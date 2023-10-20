@@ -1,2 +1,2 @@
-Simple currency cconverter website.
+Simple currency converter website.
 I used JS and Currency API
