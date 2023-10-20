@@ -1,2 +1,1 @@
-Simple currency converter website.
-I used JS and Currency API
+Simple currency converter website / JS , Currency API
